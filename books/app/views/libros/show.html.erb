@@ -1,19 +1,20 @@
 <html>
 <head>
-  <title> </title>
+  <title> <%= @libro.nombre %></title>
 </head>
 <body>
   <p>
-    <b>Nombre: </b>
+    <b>Nombre: <%= @libro.nombre %></b>
   </p>
   <p>
-    <b>Autor del libro: </b>
+    <b>Autor del libro: <%= @libro.autor %></b>
   </p>
   <p>
-    <b>Descripcion: </b>
+    <b>Descripcion: <%= @libro.descripcion %></b>
   </p>
   <p>
-    <b>Reseña hecha por: </b>
+    <b>Reseña hecha por: <%= @libro.usuario %></b>
   </p>
+  <img src="<%=@libro.img_ruta%>">
 </body>
 </html>

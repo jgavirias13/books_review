@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Books Review</title>
+</head>
+<body>
+  <h1>
+    Libros:
+  </h1>
+  <ul>
+    <% for libro in @libros %>
+      <li><a href="/libros/<%= libro.id %>"><%= libro.nombre %></a></li>
+    <% end %>
+  </ul>
+</body>
+</html>
