@@ -1,22 +1,15 @@
-<html>
-<head>
-  <title> <%= @libro.nombre %></title>
-</head>
-<body>
-  <%= image_tag(@libro.img_ruta, :width => 170, :height => 190) if @libro.img_ruta.present? %>
-  <p>
-    <b>Nombre:</b> <%= @libro.nombre %>
-  </p>
-  <p>
-    <b>Autor del libro:</b> <%= @libro.autor %>
-  </p>
-  <p>
-    <b>Descripcion:</b> <%= @libro.descripcion %>
-  </p>
-  <p>
-    <b>Reseña hecha por:</b> <%= @libro.usuario %>
-  </p>
-  <a href="/libros/<%= @libro.id %>/edit">Editar</a>
-  <a href="/libros/<%= @libro.id %>/delete">Eliminar</a>
-</body>
-</html>
+<%= image_tag(@libro.img_ruta, :width => 170, :height => 190) if @libro.img_ruta.present? %>
+<p>
+  <b>Nombre:</b> <%= @libro.nombre %>
+</p>
+<p>
+  <b>Autor del libro:</b> <%= @libro.autor %>
+</p>
+<p>
+  <b>Descripcion:</b> <%= @libro.descripcion %>
+</p>
+<p>
+  <b>Reseña hecha por:</b> <%= @libro.usuario %>
+</p>
+<a href="/libros/<%= @libro.id %>/edit">Editar</a>
+<a href="/libros/<%= @libro.id %>/delete">Eliminar</a>

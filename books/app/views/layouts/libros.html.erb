@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Books Review</title>
+  <%= stylesheet_link_tag 'default.css' %>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div>
+        <h1>Books Review</h1>
+        <ul id="nav">
+          <li><a href="/libros/">Inicio</a></li>
+          <li><a href="/libros/new">Nuevo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <%= yield %>
+  </div>
+</body>
+</html>
