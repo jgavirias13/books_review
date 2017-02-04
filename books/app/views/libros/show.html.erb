@@ -3,18 +3,20 @@
   <title> <%= @libro.nombre %></title>
 </head>
 <body>
+  <%= image_tag(@libro.img_ruta, :width => 170, :height => 190) if @libro.img_ruta.present? %>
   <p>
-    <b>Nombre: <%= @libro.nombre %></b>
+    <b>Nombre:</b> <%= @libro.nombre %>
   </p>
   <p>
-    <b>Autor del libro: <%= @libro.autor %></b>
+    <b>Autor del libro:</b> <%= @libro.autor %>
   </p>
   <p>
-    <b>Descripcion: <%= @libro.descripcion %></b>
+    <b>Descripcion:</b> <%= @libro.descripcion %>
   </p>
   <p>
-    <b>Reseña hecha por: <%= @libro.usuario %></b>
+    <b>Reseña hecha por:</b> <%= @libro.usuario %>
   </p>
-  <img src="<%=@libro.img_ruta%>">
+  <a href="/libros/<%= @libro.id %>/edit">Editar</a>
+  <a href="/libros/<%= @libro.id %>/delete">Eliminar</a>
 </body>
 </html>

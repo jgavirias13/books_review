@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Nuevo libro</title>
+</head>
+<body>
+  <h1>Nuevo libro:</h1>
+  <%= form_for @libro, url: {action: 'create'}, html: {multipart: true} do |f| %>
+    <p><b>Nombre</b><br /><%=f.text_field :nombre %></p>
+    <p><b>Autor</b><br /><%=f.text_field :autor %></p>
+    <p><b>Descripcion</b><br /><%=f.text_area :descripcion %></p>
+    <p><b>Hecha por</b><br /><%=f.text_field :usuario %></p>
+    <p><b>Imagen</b><br /><%=f.file_field :img_ruta %></p>
+    <p><%= f.submit "Crear" %></p>
+  <% end %>
+</body>
+</html>
