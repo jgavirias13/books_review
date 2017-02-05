@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get '/libros/:id/delete', to: 'libros#destroy'
   get '/libros/', to: 'libros#index'
   get '/libros/:id', to: 'libros#show'
+  get '/', to: 'libros#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
