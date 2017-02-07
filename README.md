@@ -1,24 +1,25 @@
-# README
+# Books Review
+## Informacion
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Books review es una plataforma web que permite compartir reseñas de libros,
+permitiendo colocar un nombre, un autor, una descripcion y una imagen del
+mismo. Esta dearrollado utilizando el framework Ruby on Rails, desplegado en
+heroku de manera remota y trabajado localmente bajo una maquina virtual de CentOs
 
-Things you may want to cover:
 
 * Ruby version
+  >= 2.3.3p222
 
-* System dependencies
+* Dependencias
+  Rails >= 5.0.1
+  node.js >= 4.2.6
 
-* Configuration
+* Configuración
+  Descargar repositorio, inicializar la base de datos e iniciar al servidor
+  Acceder desde un browser a https://localhost:3000
 
-* Database creation
+* Inicialización de la base de datos
+  rake db:migrate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Iniciar servidor
+  rails s
